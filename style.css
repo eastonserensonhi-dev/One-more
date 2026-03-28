@@ -139,6 +139,7 @@ header {
   width: auto;
   object-fit: contain;
   display: block;
+  mix-blend-mode: screen;
 }
 
 .nav-links {
@@ -209,6 +210,7 @@ header {
   width: clamp(260px, 55vw, 480px);
   height: auto;
   object-fit: contain;
+  mix-blend-mode: screen;
   filter: drop-shadow(0 0 32px rgba(192,16,15,.5));
   animation: logoPulse 4s ease-in-out infinite;
 }
