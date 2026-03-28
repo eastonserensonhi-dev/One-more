@@ -47,3 +47,34 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.4 });
 
 sections.forEach(s => sectionObserver.observe(s));
+
+// ── PHONE BUTTON: toast on desktop ────────
+const PHONE = '(856) 776-3828';
+
+function showToast(msg) {
+  const existing = document.getElementById('phone-toast');
+  if (existing) existing.remove();
+
+  const toast = document.createElement('div');
+  toast.id = 'phone-toast';
+  toast.textContent = msg;
+  document.body.appendChild(toast);
+
+  requestAnimationFrame(() => toast.classList.add('toast-visible'));
+  setTimeout(() => {
+    toast.classList.remove('toast-visible');
+    setTimeout(() => toast.remove(), 300);
+  }, 2500);
+}
+
+document.querySelectorAll('a[href^="tel:"]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (!navigator.userAgent.match(/Mobi|Android|iPhone|iPad/i)) {
+      navigator.clipboard.writeText(PHONE).then(() => {
+        showToast(`Copied ${PHONE} to clipboard`);
+      }).catch(() => {
+        showToast(`Call us: ${PHONE}`);
+      });
+    }
+  });
+});

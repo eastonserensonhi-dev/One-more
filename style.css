@@ -778,6 +778,34 @@ a.contact-item-link:hover .ci-value { color: var(--orange); }
 }
 
 /* ==========================================
+   PHONE TOAST
+   ========================================== */
+#phone-toast {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%) translateY(16px);
+  background: #1a3252;
+  border: 1px solid var(--border);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 100px;
+  box-shadow: 0 8px 32px rgba(0,0,0,.4);
+  opacity: 0;
+  transition: opacity .25s ease, transform .25s ease;
+  z-index: 9999;
+  white-space: nowrap;
+  pointer-events: none;
+}
+#phone-toast.toast-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ==========================================
    SCROLL-IN ANIMATION
    ========================================== */
 [data-aos] {
