@@ -243,22 +243,9 @@ header {
   text-transform: uppercase;
 }
 
-.hero-name-row {
-  display: flex;
-  align-items: baseline;
-  line-height: 1;
-}
-
-.hero-num {
-  font-size: clamp(3rem, 7vw, 5.2rem);
-  color: var(--red);
-  line-height: 1;
-  letter-spacing: -.02em;
-}
-
 .hero-name {
-  font-size: clamp(1.5rem, 3.5vw, 2.8rem);
-  letter-spacing: .01em;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: .08em;
   line-height: 1;
 }
 
