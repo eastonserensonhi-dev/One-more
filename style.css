@@ -15,8 +15,6 @@
   --orange:  #e87722;
   --orange2: #f59332;
   --white:   #ffffff;
-  --light:   #f4f7fb;
-  --gray:    #8a9ab5;
   --border:  #1e3050;
   --text:    #d0daea;
   --text2:   #7a8ba8;
@@ -179,16 +177,17 @@ img { max-width: 100%; display: block; }
   transition: color .2s;
 }
 .nav-links a:hover { color: var(--white); }
-.nav-cta {
-  background: var(--orange) !important;
-  color: var(--white) !important;
+.nav-links a.nav-cta {
+  background: var(--orange);
+  color: var(--white);
   padding: 9px 20px;
   border-radius: 6px;
-  font-weight: 600 !important;
-  transition: background .2s, transform .2s !important;
+  font-weight: 600;
+  transition: background .2s, transform .2s;
 }
-.nav-cta:hover {
-  background: var(--orange2) !important;
+.nav-links a.nav-cta:hover {
+  background: var(--orange2);
+  color: var(--white);
   transform: translateY(-1px);
 }
 .nav-toggle {
@@ -206,7 +205,7 @@ img { max-width: 100%; display: block; }
   height: 2px;
   background: var(--white);
   border-radius: 2px;
-  transition: all .3s;
+  transition: background-color .3s, transform .3s;
 }
 
 /* ==========================================
