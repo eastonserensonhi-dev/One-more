@@ -129,24 +129,13 @@ header {
 
 .nav-logo {
   display: flex;
-  flex-direction: column;
-  line-height: 1;
+  align-items: center;
 }
 
-.logo-text {
-  font-family: var(--font-head);
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: .1em;
-}
-
-.logo-sub {
-  font-family: var(--font-head);
-  font-size: .65rem;
-  color: var(--red);
-  letter-spacing: .2em;
-  text-transform: uppercase;
+.nav-logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -215,16 +204,23 @@ header {
 
 /* Circular logo in hero */
 .hero-logo-ring {
-  width: clamp(200px, 30vw, 300px);
-  height: clamp(200px, 30vw, 300px);
+  width: clamp(240px, 38vw, 360px);
+  height: clamp(240px, 38vw, 360px);
   border-radius: 50%;
-  background: #fff;
+  background: #000;
   border: 6px solid var(--red);
   box-shadow: 0 0 0 8px #111, 0 0 0 14px var(--red), 0 0 60px rgba(192,16,15,.5);
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   animation: pulse 4s ease-in-out infinite;
+}
+
+.hero-logo-img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
 }
 
 @keyframes pulse {
@@ -634,7 +630,7 @@ header {
   text-align: center;
 }
 
-.footer-logo .logo-text { font-size: 1.2rem; }
+.footer-logo-img { height: 60px; width: auto; object-fit: contain; }
 
 .footer-links {
   display: flex;
