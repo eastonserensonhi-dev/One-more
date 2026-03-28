@@ -55,7 +55,7 @@ img { max-width: 100%; display: block; }
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all .2s ease;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .2s ease, box-shadow .2s ease;
   white-space: nowrap;
   border: 2px solid transparent;
 }
@@ -310,6 +310,11 @@ img { max-width: 100%; display: block; }
 }
 
 /* HERO VISUAL */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .hero-visual {
   display: flex;
   justify-content: center;
