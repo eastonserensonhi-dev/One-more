@@ -40,7 +40,7 @@ const sectionObserver = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       links.forEach(link => {
         const active = link.getAttribute('href') === `#${entry.target.id}`;
-        link.style.color = active ? 'var(--orange)' : '';
+        link.style.color = active ? '#e87722' : '';
       });
     }
   });
