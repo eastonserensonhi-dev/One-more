@@ -142,6 +142,11 @@ img { max-width: 100%; display: block; }
   align-items: center;
   gap: 10px;
 }
+.logo-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
 .logo-text {
   display: flex;
   flex-direction: column;
@@ -603,6 +608,11 @@ img { max-width: 100%; display: block; }
   font-size: 1rem;
   color: var(--white);
   flex-shrink: 0;
+}
+.reviewer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 .reviewer-name {
   display: block;
