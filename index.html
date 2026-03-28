@@ -3,230 +3,228 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>One More Bar &amp; Grill | Tabernacle, NJ</title>
+  <title>Pro-Duct HVAC LLC | Medford, NJ</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Barlow+Condensed:wght@500;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <!-- NAV -->
-  <header>
+  <header class="header" id="header">
     <nav class="navbar">
       <div class="nav-logo">
-        <img src="logo.png" alt="One More Bar &amp; Grill" class="nav-logo-img" />
+        <span class="logo-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="8" width="28" height="16" rx="3" fill="#0f4c81" stroke="#e87722" stroke-width="1.5"/>
+            <rect x="6" y="12" width="4" height="8" rx="1" fill="#e87722"/>
+            <rect x="13" y="12" width="4" height="8" rx="1" fill="#e87722"/>
+            <rect x="20" y="12" width="4" height="8" rx="1" fill="#e87722"/>
+            <path d="M8 4 L16 4 L24 4" stroke="#e87722" stroke-width="2" stroke-linecap="round"/>
+            <path d="M8 28 L16 28 L24 28" stroke="#e87722" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <div class="logo-text">
+          <span class="logo-primary">Pro-Duct</span>
+          <span class="logo-secondary">HVAC LLC</span>
+        </div>
       </div>
-      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
-      <ul class="nav-links">
+      <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#specials">Specials</a></li>
         <li><a href="#reviews">Reviews</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="tel:+18567763828" class="nav-cta">Call Now</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- HERO -->
   <section class="hero" id="home">
-    <div class="hero-overlay"></div>
+    <div class="hero-bg">
+      <div class="hero-grid-overlay"></div>
+    </div>
     <div class="hero-content">
-      <img src="logo.png" alt="One More Bar &amp; Grill" class="hero-logo-img" />
-      <p class="hero-tagline">South Jersey's Favorite Local Hangout</p>
-      <div class="hero-cta">
-        <a href="#menu" class="btn btn-red">See Our Menu</a>
-        <a href="#contact" class="btn btn-outline">Find Us</a>
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Medford, NJ &mdash; Licensed &amp; Insured
       </div>
-      <div class="hero-badge open-badge">
-        <span class="dot"></span> Open Now &mdash; 11AM–2AM Daily
+      <h1 class="hero-title">
+        South Jersey's<br />
+        <span class="hero-accent">Trusted HVAC</span><br />
+        Experts
+      </h1>
+      <p class="hero-subtitle">
+        Fast, reliable heating &amp; cooling service for your home or business.
+        Quality workmanship at fair prices — backed by a 4.9&#9733; reputation.
+      </p>
+      <div class="hero-cta-group">
+        <a href="tel:+18567763828" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+          (856) 776-3828
+        </a>
+        <a href="#services" class="btn btn-outline">Our Services</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">4.9</span>
+          <span class="stat-label">&#9733; Google Rating</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">61+</span>
+          <span class="stat-label">5-Star Reviews</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">Emergency Service</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hvac-unit-graphic">
+        <div class="unit-body">
+          <div class="unit-grill">
+            <div class="grill-line"></div>
+            <div class="grill-line"></div>
+            <div class="grill-line"></div>
+            <div class="grill-line"></div>
+            <div class="grill-line"></div>
+            <div class="grill-line"></div>
+          </div>
+          <div class="unit-fan">
+            <div class="fan-blade"></div>
+            <div class="fan-blade"></div>
+            <div class="fan-blade"></div>
+            <div class="fan-hub"></div>
+          </div>
+        </div>
+        <div class="unit-glow"></div>
+        <div class="float-tag tag-1">AC Repair</div>
+        <div class="float-tag tag-2">Heating</div>
+        <div class="float-tag tag-3">Ductwork</div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="about section" id="about">
+  <!-- SERVICES -->
+  <section class="services section" id="services">
     <div class="container">
       <div class="section-header">
-        <h2>Burlington County's Best-Kept Secret</h2>
-        <div class="divider"></div>
+        <p class="section-label">What We Do</p>
+        <h2>Complete HVAC Solutions</h2>
+        <p class="section-sub">From emergency repairs to full system installations, we handle everything your home or business needs.</p>
       </div>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>Tucked along US-206 in Tabernacle, NJ, One More Bar &amp; Grill is the kind of place you discover once and keep coming back to. We're a laid-back, no-frills local pub with a warm, welcoming crew that treats every guest like a regular.</p>
-          <p>Whether you're stopping in after work, catching a game, or just craving the best wings and burgers in South Jersey, pull up a seat — we saved one for you.</p>
-          <div class="highlights">
-            <div class="highlight-item">
-              <span class="hi-icon">&#127831;</span>
-              <span>Award-Worthy Wings</span>
-            </div>
-            <div class="highlight-item">
-              <span class="hi-icon">&#127828;</span>
-              <span>Legendary Burgers</span>
-            </div>
-            <div class="highlight-item">
-              <span class="hi-icon">&#127867;</span>
-              <span>Great Drinks</span>
-            </div>
-            <div class="highlight-item">
-              <span class="hi-icon">&#9733;</span>
-              <span>Friendly Staff</span>
-            </div>
+      <div class="services-grid">
+
+        <div class="service-card" data-aos>
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6v6l4 2"/></svg>
           </div>
+          <h3>AC Installation &amp; Replacement</h3>
+          <p>New system installs and full unit replacements — sized right for your space and budget, done in a single day.</p>
         </div>
-        <div class="about-cards">
-          <div class="info-card">
-            <div class="info-icon">&#128337;</div>
-            <h3>Hours</h3>
-            <p>Mon–Sun<br /><strong>11:00 AM – 2:00 AM</strong></p>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"/><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/></svg>
           </div>
-          <div class="info-card">
-            <div class="info-icon">&#128205;</div>
-            <h3>Location</h3>
-            <p>1375 US-206<br />Tabernacle, NJ 08088</p>
-          </div>
-          <div class="info-card">
-            <div class="info-icon">&#128222;</div>
-            <h3>Phone</h3>
-            <p><a href="tel:+16093885386">(609) 388-5386</a></p>
-          </div>
-          <div class="info-card">
-            <div class="info-icon">&#127775;</div>
-            <h3>Yelp</h3>
-            <p>3.8 &#9733; &nbsp;(90 reviews)</p>
-          </div>
+          <h3>AC Repair &amp; Service</h3>
+          <p>Fast diagnosis and same-day repairs to get your cooling system back online — even on weekends and holidays.</p>
         </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/></svg>
+          </div>
+          <h3>Heating &amp; Furnace</h3>
+          <p>Complete furnace installation, repair, and tune-ups. We keep your home warm all winter long with proven reliability.</p>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
+          </div>
+          <h3>Ductwork &amp; Air Flow</h3>
+          <p>Custom ductwork design, installation, and repair. We fix airflow issues, seal leaks, and add vents where needed.</p>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Preventive Maintenance</h3>
+          <p>Seasonal tune-ups that extend system life, improve efficiency, and catch problems before they become costly repairs.</p>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M5.34 17.66l-1.41 1.41M4.93 4.93l1.41 1.41M18.66 18.66l1.41 1.41M1 12h2M21 12h2M12 1v2M12 21v2"/></svg>
+          </div>
+          <h3>Emergency Service</h3>
+          <p>HVAC doesn't fail on a schedule. We're available when you need us most — cold nights, hot weekends, and holidays.</p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- MENU -->
-  <section class="menu-section section" id="menu">
+  <!-- WHY CHOOSE US -->
+  <section class="why section" id="about">
     <div class="container">
-      <div class="section-header light">
-        <h2>What We're Known For</h2>
-        <div class="divider red"></div>
-      </div>
-      <div class="menu-grid">
-
-        <div class="menu-card">
-          <div class="menu-emoji">&#127831;</div>
-          <h3>Wings</h3>
-          <p>Our wings are legendary in South Jersey. Crispy, saucy, and available in a range of house-made flavors. Order a dozen — you'll want two.</p>
-          <ul class="menu-list">
-            <li>Buffalo Classic</li>
-            <li>Honey Garlic</li>
-            <li>BBQ Smoked</li>
-            <li>Dry Rub Cajun</li>
-            <li>Sweet Chili</li>
-          </ul>
+      <div class="why-grid">
+        <div class="why-content">
+          <p class="section-label">About Pro-Duct</p>
+          <h2>Built on Skill,<br />Driven by Integrity</h2>
+          <p class="why-text">Ryan and the Pro-Duct HVAC team have been serving Medford and South Jersey with honest, expert HVAC service. No upsells. No surprises. Just quality workmanship at fair prices and a job done right the first time.</p>
+          <p class="why-text">Whether it's an emergency repair at 11 PM or a full system replacement, Ryan treats every home like his own — showing up on time, communicating clearly, and leaving the job site clean.</p>
+          <div class="why-features">
+            <div class="why-item">
+              <div class="why-check">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Licensed &amp; fully insured in New Jersey</span>
+            </div>
+            <div class="why-item">
+              <div class="why-check">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Free estimates &amp; transparent pricing</span>
+            </div>
+            <div class="why-item">
+              <div class="why-check">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Same-day and emergency availability</span>
+            </div>
+            <div class="why-item">
+              <div class="why-check">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Serving Medford, Marlton, Mt. Laurel &amp; beyond</span>
+            </div>
+          </div>
+          <a href="tel:+18567763828" class="btn btn-primary">
+            Get a Free Estimate
+          </a>
         </div>
-
-        <div class="menu-card featured">
-          <div class="featured-label">Fan Favorite</div>
-          <div class="menu-emoji">&#127828;</div>
-          <h3>Burgers</h3>
-          <p>Juicy, hand-pressed burgers built the way you want them. Dressed up or dressed down — no wrong answer.</p>
-          <ul class="menu-list">
-            <li>Classic Smash Burger</li>
-            <li>Bacon Cheddar Melt</li>
-            <li>Mushroom Swiss</li>
-            <li>BBQ Bacon Stack</li>
-            <li>Veggie Burger</li>
-          </ul>
-        </div>
-
-        <div class="menu-card">
-          <div class="menu-emoji">&#129367;</div>
-          <h3>Salads</h3>
-          <p>Fresh, generous salads that hold their own. Great as a starter or a meal — made with crisp ingredients and house dressings.</p>
-          <ul class="menu-list">
-            <li>Garden House</li>
-            <li>Caesar</li>
-            <li>Grilled Chicken</li>
-            <li>Buffalo Chicken</li>
-          </ul>
-        </div>
-
-        <div class="menu-card">
-          <div class="menu-emoji">&#127839;</div>
-          <h3>Sandwiches &amp; Wraps</h3>
-          <p>Stacked high and served with your choice of sides. Perfect for lunch or a quick bite before the next round.</p>
-          <ul class="menu-list">
-            <li>Philly Cheesesteak</li>
-            <li>Club Sandwich</li>
-            <li>Grilled Chicken Wrap</li>
-            <li>BLT</li>
-          </ul>
-        </div>
-
-        <div class="menu-card">
-          <div class="menu-emoji">&#127867;</div>
-          <h3>Drinks</h3>
-          <p>Full bar with domestic and craft beers on tap, cocktails, shots, and non-alcoholic options. Apple Pay accepted.</p>
-          <ul class="menu-list">
-            <li>Beers on Tap</li>
-            <li>Signature Cocktails</li>
-            <li>Whiskey &amp; Bourbon</li>
-            <li>Soft Drinks &amp; Juices</li>
-          </ul>
-        </div>
-
-        <div class="menu-card">
-          <div class="menu-emoji">&#127857;</div>
-          <h3>Starters &amp; Sides</h3>
-          <p>Round out your order with our crowd-pleasing starters and sides. Share them — or don't.</p>
-          <ul class="menu-list">
-            <li>Mozzarella Sticks</li>
-            <li>Onion Rings</li>
-            <li>French Fries</li>
-            <li>Jalapeño Poppers</li>
-          </ul>
-        </div>
-
-      </div>
-      <p class="menu-note">Menu items may vary. Call ahead or visit us for today's full menu.</p>
-    </div>
-  </section>
-
-  <!-- SPECIALS -->
-  <section class="specials section" id="specials">
-    <div class="container">
-      <div class="section-header">
-        <h2>Weekly Specials</h2>
-        <div class="divider"></div>
-      </div>
-      <div class="specials-grid">
-        <div class="special-card">
-          <div class="special-day">Monday</div>
-          <div class="special-deal">Wing Night</div>
-          <p>Half-price wings all night long. Dine in only.</p>
-        </div>
-        <div class="special-card">
-          <div class="special-day">Tuesday</div>
-          <div class="special-deal">Burger &amp; Beer</div>
-          <p>Any burger + domestic draft for a killer combo price.</p>
-        </div>
-        <div class="special-card">
-          <div class="special-day">Wednesday</div>
-          <div class="special-deal">Ladies' Night</div>
-          <p>Drink specials for the ladies all evening.</p>
-        </div>
-        <div class="special-card">
-          <div class="special-day">Thursday</div>
-          <div class="special-deal">Trivia Night</div>
-          <p>Test your knowledge. Winners get bar credit!</p>
-        </div>
-        <div class="special-card">
-          <div class="special-day">Friday &amp; Saturday</div>
-          <div class="special-deal">Live Music</div>
-          <p>Local talent every weekend. Check our socials for lineups.</p>
-        </div>
-        <div class="special-card">
-          <div class="special-day">Sunday</div>
-          <div class="special-deal">Game Day</div>
-          <p>All games on all screens. Wings and drink specials during kick-off.</p>
+        <div class="why-visual">
+          <div class="rating-card">
+            <div class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="rating-num">4.9</div>
+            <div class="rating-count">61 Google Reviews</div>
+          </div>
+          <div class="quote-block">
+            <svg class="quote-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            <p>"Ryan was easy to work with, reliable, knowledgeable, and reasonably priced. He provided quality workmanship and fast superior service."</p>
+            <span class="quote-author">— Google Reviewer</span>
+          </div>
         </div>
       </div>
     </div>
@@ -235,94 +233,105 @@
   <!-- REVIEWS -->
   <section class="reviews section" id="reviews">
     <div class="container">
-      <div class="section-header light">
-        <h2>What People Are Saying</h2>
-        <div class="divider red"></div>
-        <div class="yelp-badge">
-          <span class="yelp-stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
-          <span class="yelp-score">3.8</span>
-          <span class="yelp-count">on Yelp (90 reviews)</span>
-        </div>
+      <div class="section-header">
+        <p class="section-label">What Customers Say</p>
+        <h2>4.9 Stars on Google</h2>
+        <p class="section-sub">Real reviews from real South Jersey homeowners.</p>
       </div>
       <div class="reviews-grid">
-        <div class="review-card">
-          <div class="review-avatar">MP</div>
-          <div class="review-body">
-            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p>"The best burgers and wings. The best salads. Great drinks! Wonderful customer service!"</p>
-            <div class="review-author">— Marybeth P.</div>
+
+        <div class="review-card" data-aos>
+          <div class="review-top">
+            <div class="reviewer-avatar">S</div>
+            <div class="reviewer-info">
+              <span class="reviewer-name">shadow928x</span>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
           </div>
+          <p>"Our furnace stopped working in the middle of a cold spell. Pro-Duct's reviews were excellent so I gave them a call. I was not disappointed — professional, fast, and totally fair on price."</p>
+          <span class="review-time">3 months ago</span>
         </div>
-        <div class="review-card">
-          <div class="review-avatar">LF</div>
-          <div class="review-body">
-            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p>"A local pub not known for their ambience, but for their wings, fabulous quick favorites, warm and welcoming staff. Go often to find your favorite."</p>
-            <div class="review-author">— Marybeth P.</div>
+
+        <div class="review-card" data-aos>
+          <div class="review-top">
+            <div class="reviewer-avatar">R</div>
+            <div class="reviewer-info">
+              <span class="reviewer-name">Ronald T.</span>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
           </div>
+          <p>"Amazing and caring service. Ryan returned my call immediately — on the way to another job — and took the time to walk me through the repair over the phone. That's real service!"</p>
+          <span class="review-time">6 months ago</span>
         </div>
-        <div class="review-card">
-          <div class="review-avatar">LF</div>
-          <div class="review-body">
-            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
-            <p>"I always drove by this place saying we should try it. Decorated for Halloween it looked SO awesome we finally went in — coolest, most laid-back spot around. We'll be back!"</p>
-            <div class="review-author">— Liz F.</div>
+
+        <div class="review-card" data-aos>
+          <div class="review-top">
+            <div class="reviewer-avatar">K</div>
+            <div class="reviewer-info">
+              <span class="reviewer-name">Kimmy N.</span>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
           </div>
+          <p>"Ryan replaced our entire 40+ year old HVAC system, fixed ductwork, and added a new return vent — all with incredible attention to detail. He went truly above and beyond. I wouldn't hesitate to recommend him."</p>
+          <span class="review-time">7 months ago</span>
         </div>
+
+      </div>
+      <div class="reviews-cta">
+        <p>Join dozens of happy South Jersey homeowners.</p>
+        <a href="tel:+18567763828" class="btn btn-primary">Schedule Service Today</a>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- CONTACT / CTA -->
   <section class="contact section" id="contact">
     <div class="container">
-      <div class="section-header">
-        <h2>Come Find Us</h2>
-        <div class="divider"></div>
-      </div>
       <div class="contact-grid">
-        <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon">&#128205;</div>
-            <div>
-              <h3>Address</h3>
-              <p>1375 US-206<br />Tabernacle, NJ 08088</p>
-              <a href="https://maps.google.com/?q=1375+US-206+Tabernacle+NJ+08088" target="_blank" rel="noopener" class="btn btn-red btn-sm">Get Directions</a>
+        <div class="contact-content">
+          <p class="section-label">Get in Touch</p>
+          <h2>Ready to Get<br />Comfortable?</h2>
+          <p>Call or text us to schedule service, request a free estimate, or ask a question. Ryan responds fast.</p>
+          <div class="contact-items">
+            <a href="tel:+18567763828" class="contact-item-link">
+              <div class="contact-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+              </div>
+              <div>
+                <span class="ci-label">Phone</span>
+                <span class="ci-value">(856) 776-3828</span>
+              </div>
+            </a>
+            <div class="contact-item-link">
+              <div class="contact-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="ci-label">Address</span>
+                <span class="ci-value">208 Forest Ave, Medford, NJ 08055</span>
+              </div>
+            </div>
+            <div class="contact-item-link">
+              <div class="contact-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <span class="ci-label">Hours</span>
+                <span class="ci-value">Mon–Fri: 8 AM – 5 PM &nbsp;|&nbsp; Emergency: 24/7</span>
+              </div>
             </div>
           </div>
-          <div class="contact-item">
-            <div class="contact-icon">&#128222;</div>
-            <div>
-              <h3>Phone</h3>
-              <p><a href="tel:+16093885386">(609) 388-5386</a></p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">&#128337;</div>
-            <div>
-              <h3>Hours</h3>
-              <p>Monday – Sunday<br /><strong>11:00 AM – 2:00 AM</strong></p>
-            </div>
-          </div>
-          <div class="amenities">
-            <h3>Good to Know</h3>
-            <div class="amenity-tags">
-              <span>&#127864; Takeout</span>
-              <span>&#128663; Delivery</span>
-              <span>&#128100; Good for Kids</span>
-              <span>&#9729; Outdoor Dining</span>
-              <span>&#128663; Parking Lot</span>
-              <span>&#127358; Apple Pay</span>
-              <span>&#128179; Contactless Pay</span>
-            </div>
-          </div>
+          <a href="tel:+18567763828" class="btn btn-primary btn-large">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            Call (856) 776-3828
+          </a>
         </div>
-        <div class="map-container">
+        <div class="map-wrap">
           <iframe
-            title="One More Bar and Grill location map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3054.6!2d-74.674!3d39.847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c14b5e5e5e5e5f%3A0x0!2s1375+US-206%2C+Tabernacle%2C+NJ+08088!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
+            title="Pro-Duct HVAC LLC location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.2!2d-74.8277!3d39.9112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c14c8aef4a8b3f%3A0x1!2s208+Forest+Ave%2C+Medford%2C+NJ+08055!5e0!3m2!1sen!2sus!4v1700000000000"
             width="100%"
-            height="380"
+            height="420"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
@@ -336,17 +345,27 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
-      <div class="footer-logo">
-        <img src="logo.png" alt="One More Bar &amp; Grill" class="footer-logo-img" />
+      <div class="footer-left">
+        <div class="footer-logo">
+          <span class="logo-primary">Pro-Duct</span>
+          <span class="logo-secondary">HVAC LLC</span>
+        </div>
+        <p class="footer-tagline">Keeping South Jersey Comfortable.</p>
       </div>
       <div class="footer-links">
         <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#specials">Specials</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
         <a href="#reviews">Reviews</a>
         <a href="#contact">Contact</a>
       </div>
-      <p class="footer-copy">&copy; 2024 One More Bar &amp; Grill. 1375 US-206, Tabernacle, NJ 08088 &mdash; (609) 388-5386</p>
+      <div class="footer-contact">
+        <a href="tel:+18567763828">(856) 776-3828</a>
+        <span>208 Forest Ave, Medford, NJ 08055</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Pro-Duct HVAC LLC &mdash; All Rights Reserved</p>
     </div>
   </footer>
 

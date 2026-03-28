@@ -1,48 +1,49 @@
-// Mobile nav toggle
-const toggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
+// ── NAVBAR: scroll shadow ──────────────────
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 20);
+}, { passive: true });
 
-toggle.addEventListener('click', () => {
+// ── MOBILE NAV TOGGLE ─────────────────────
+const navToggle = document.getElementById('navToggle');
+const navLinks  = document.getElementById('navLinks');
+
+navToggle.addEventListener('click', () => {
   navLinks.classList.toggle('open');
 });
 
-// Close mobile nav on link click
 navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => navLinks.classList.remove('open'));
 });
 
-// Highlight active nav link on scroll
-const sections = document.querySelectorAll('section[id]');
-const links = document.querySelectorAll('.nav-links a');
+// ── SCROLL-IN ANIMATIONS ──────────────────
+const aosObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      aosObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-const observer = new IntersectionObserver((entries) => {
+document.querySelectorAll('[data-aos]').forEach((el, i) => {
+  el.style.transitionDelay = `${(i % 3) * 80}ms`;
+  aosObserver.observe(el);
+});
+
+// ── ACTIVE NAV LINK ON SCROLL ─────────────
+const sections = document.querySelectorAll('section[id]');
+const links    = document.querySelectorAll('.nav-links a[href^="#"]');
+
+const sectionObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       links.forEach(link => {
-        link.style.color = link.getAttribute('href') === `#${entry.target.id}` ? '#c0100f' : '';
+        const active = link.getAttribute('href') === `#${entry.target.id}`;
+        link.style.color = active ? 'var(--orange)' : '';
       });
     }
   });
 }, { threshold: 0.4 });
 
-sections.forEach(s => observer.observe(s));
-
-// Fade-in on scroll
-const fadeEls = document.querySelectorAll('.menu-card, .special-card, .review-card, .info-card');
-
-const fadeObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
-      fadeObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1 });
-
-fadeEls.forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(20px)';
-  el.style.transition = 'opacity .5s ease, transform .5s ease';
-  fadeObserver.observe(el);
-});
+sections.forEach(s => sectionObserver.observe(s));
