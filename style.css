@@ -243,24 +243,30 @@ header {
   text-transform: uppercase;
 }
 
+.hero-name-row {
+  display: flex;
+  align-items: baseline;
+  line-height: 1;
+}
+
 .hero-num {
-  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-size: clamp(3rem, 7vw, 5.2rem);
   color: var(--red);
-  line-height: .9;
+  line-height: 1;
   letter-spacing: -.02em;
 }
 
 .hero-name {
-  font-size: clamp(1.1rem, 2.5vw, 1.8rem);
-  letter-spacing: .04em;
-  margin-top: .1rem;
+  font-size: clamp(1.5rem, 3.5vw, 2.8rem);
+  letter-spacing: .01em;
+  line-height: 1;
 }
 
 .hero-tag {
   font-size: clamp(.6rem, 1.2vw, .85rem);
   letter-spacing: .22em;
   color: var(--red);
-  margin-top: .2rem;
+  margin-top: .25rem;
 }
 
 .hero-tagline {
